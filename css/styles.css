@@ -90,7 +90,7 @@ body {
 ul {
   list-style-type: none;
   margin: 0px;
-  padding-left: 0;
+  padding: 0;
 }
 
 a {
@@ -106,7 +106,7 @@ p {
 
 img {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
   /* height: auto; */
 }
 
@@ -198,11 +198,12 @@ address {
 
   border: 1px solid var(--accent-cl);
   border-radius: 25px;
+  cursor: pointer;
 /* анимация */
   transition-duration: 1s;
   transition-property: background-color;
   transition-timing-function: linear;
-  transition-delay: 1s;
+  /* transition-delay: 1s; */
 /* transition: background-color 5s linear 2s, color 2s ease 1s; */
 }
 
@@ -211,6 +212,14 @@ address {
   color: #ccc;
   border: var(--gray);
 
+}
+
+.list li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.list li:last-child {
+  margin-right: 64px;
 }
 
 /* .content-box .btn {
@@ -232,6 +241,10 @@ color: var(--white);
 
 .button {
   color: var(--black);
+}
+
+.btn-centered {
+  margin: 0 auto;
 }
 
 .menu {
@@ -307,6 +320,13 @@ padding-bottom: 40px;
   object-fit: fill;
 }
 
+/* Section */
+
+.btn-centered {
+  display: block;
+  margin: 0 auto;
+}
+
 .section-label {
   display: flex;
   align-items: center;
@@ -316,6 +336,8 @@ padding-bottom: 40px;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* margin-bottom: 44px; */
   /* text-transform: uppercase; */
   /* color: rgba(157, 164, 189, 0.6); */
 }
@@ -392,6 +414,7 @@ padding-bottom: 40px;
 }
 
 .price-list {
+  margin-bottom: 50px;
   width: 50%;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -504,7 +527,7 @@ color: #9DA4BD;
 }
 
 .section-title {
-  width: 420px;
+  /* width: 420px; */
   margin-bottom: 20px;
   font-family: "Raleway";
   font-weight: 700;
@@ -518,6 +541,19 @@ color: #9DA4BD;
 .section {
   padding-top: 130px;
   padding-bottom: 130px;
+}
+
+.section-text {
+  margin-bottom: 40px;
+  color: #555;
+  width: 482px;
+
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.8; /* 185.714% */
+letter-spacing: 0.28px;
 }
 
 /* benefits ------------------------------------------- */
@@ -607,6 +643,14 @@ width: calc(((100% - 30px * 5) / 6 * 4) + 30px * 3);
   width: calc((100% -30px) / 2);
 }
 
+.content-box h2 {
+  width: 420px;
+}
+
+.content-box-text {
+  width: 455px;
+}
+
 /* team ------------------------------------------------------ */
 .item-title {
   line-height: 1.389;
@@ -618,7 +662,7 @@ width: calc(((100% - 30px * 5) / 6 * 4) + 30px * 3);
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -30px;
+  /* margin-top: -30px; */
 }
 
 .team-item {
@@ -724,7 +768,7 @@ color: var(--accent-cl);
 
 .contacs {
   padding-left: 100px;
-  padding-right: 100px;
+  padding-right: 50px;
   background-image: url(../images/footer/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -834,6 +878,7 @@ width: 230px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .copiright {
@@ -843,7 +888,6 @@ width: 230px;
 
   color: var(--gray);
 }
-
 /* кнопка------------------------------------------------ */
 
 .backdrop {
